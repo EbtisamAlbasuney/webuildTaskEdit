@@ -1,0 +1,408 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Global*/
+
+section {
+  padding-bottom: 100px;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+ul {
+  list-style: none;
+}
+.bg {
+  background: url("images/Sans titre-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40rem;
+}
+@media (max-width: 991px) {
+  .bg {
+    background-size: cover;
+    height: 50rem;
+  }
+}
+@media (max-width: 425px) {
+  .bg {
+    background-size: cover;
+    height: 35rem;
+  }
+}
+
+.navbar-nav li a {
+  font-size: 14px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+.btn-grad {
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 130px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-part button {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 178px;
+  height: 45px;
+  color: #ff6057;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.text-part p{
+  font-size: 24px;
+}
+.text-part h1{
+  font-size: 58px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.text-part span{
+  font-size: 18px;
+}
+
+.color-red {
+  background-color: #f1291e;
+}
+.color-blue {
+  background-color: #36c5ad;
+}
+.color-purple {
+  background-color: #cb4bf8;
+}
+.color-green {
+  background-color: #56e65b;
+}
+.color-red,
+.color-blue,
+.color-purple,
+.color-green {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  display: flex;
+}
+.color-red img,
+.color-blue img,
+.color-purple img,
+.color-green img {
+  margin: auto;
+}
+.rectangle-9 {
+  width: 500px;
+  margin-top: 30px;
+}
+.section h2{
+  font-size: 38px;
+  font-weight: bold;
+}
+.section p{
+  font-size: 14px;
+  color: #8F8F8F;
+}
+
+.section a {
+  color: #ff6057;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.intersect-1 {
+  background: url("images/Intersection\ 1.png") no-repeat;
+  background-size: contain;
+  background-position: left;
+
+
+}
+
+.intersect-2 {
+  background: url("images/Intersection\ 2.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+
+}
+.intersect-2 img,.intersect-1 img {
+  width: 100%;
+}
+/* slider */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides,
+.card-slide {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #ff6057;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.par-1{
+  color: #000;
+  font-size: 14px; 
+  font-weight: bold;
+  margin-top: 10px;
+}
+.par-2 {
+  color: #8f8f8f;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 30px;
+}
+.par-3 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.par-4 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.seven-left h2 {
+  font-weight: bold;
+  font-size: 38px;
+}
+.seven-left p {
+  color: #8f8f8f;
+  font-size: 14px;
+}
+
+.div-1 {
+  background-color: #ff6057;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+.line {
+  background-color: #8f8f8f;
+  width: 0.5px;
+  height: 60px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.market h2{
+  font-size: 24px;
+  font-weight: bold;
+}
+.market p{
+  font-size: 14px;
+  color: #8F8F8F;
+}
+
+.rate h2 {
+  color: #ff6057;
+  font-weight: bold;
+  font-size: 46px;
+}
+.rate p {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-slide {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 200px;
+  margin-bottom: 20px;
+}
+.one img {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40px;
+}
+.two {
+  margin-top: 30px;
+}
+.two h2 {
+  font-size: 18px;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+  color: #cb48f9;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+
+footer {
+  background-color: #333333;
+}
+footer h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+footer p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+footer ul {
+  margin-top: 20px;
+}
+.list-footer{
+  margin-bottom: 10px;
+
+}
+.list-footer a {
+  color: #fff;
+  font-size: 14px;
+}
+.list-footer a:hover {
+  color: #f1291e;
+}
+.input-email {
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  padding: 20px;
+  margin-top: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+::placeholder {
+  font-weight: bold;
+}
+.btn-subscribe {
+  background-color: #ff6057;
+  width: 45%;
+  height: 50px;
+  border-radius: 40px;
+  color: #fff;
+  position: relative;
+  left: 55%;
+  top: -50px;
+  font-weight: bold;
+}
+
+
+.btn-about,.btn-about2{
+  background-image: url("images/Rectangle\ 4.png");
+  width:178px;
+  height: 45px;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  left: 100px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.btn-about2{
+  position: relative;
+  left: 10px;
+}
